@@ -1,5 +1,5 @@
 <% @owners.each do |owner|%>
-  <a href="/owner/<%= recipe.id %>">Name: <%= recipe.name %></a>
+  <a href="/owner/<%= owner.id %>">Name: <%= recipe.name %></a>
   Ingredients: <%= recipe.ingredients %>
   Cook time <%= recipe.cook_time %>
 <% end %>
