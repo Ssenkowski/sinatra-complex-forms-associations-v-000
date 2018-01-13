@@ -7,14 +7,14 @@
   <input type="submit" value="Create Pet">
   <br></br>
   <hr></hr>
-<label> Now select the pet's owner by checking a box or... </label>
+<label> Now select the pet's owner by checking a box or create a new owner. </label>
   <br></br>
   <%Owner.all.each do |owner|%>
     <input type="checkbox" name="pet[owner_id]" id="<%= owner.name %>" value="<%=owner.id%>"><%=owner.name%></input>
   <%end%>
 
     <br></br>
-  <label> create a new owner. </label>
+  <label> New owner </label>
     <br></br>
     <label>Owner's name:</label>
       <input type="text" name="owner[name]" id="owner_name"></input>
