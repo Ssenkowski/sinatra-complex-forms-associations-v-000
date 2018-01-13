@@ -8,7 +8,7 @@
   <input type="submit" value="Create Pet">
   <br></br>
   <hr></hr>
-<label> Now select the owner's pet by checking a box or create a new owner. </label>
+<label> Now select the owner's pet by checking a box or create a new one. </label>
   <br></br>
   <%Pet.all.each do |pet|%>
     <input type="checkbox" name="owner[pet_id]" id="<%= pet.name %>" value="<%=pet.id%>"><%=pet.name%></input>
